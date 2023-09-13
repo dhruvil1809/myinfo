@@ -1,0 +1,355 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dhruvil Antala</title>
+    <link rel="icon" href="{% static 'img/infotit.png' %}" type="image/x-icon">
+
+    {% comment %} <!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Include jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> {% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/unicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+
+    
+
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class='uil uil-user'></i>Dhruvil</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+      {% for msg in messages %}
+        <div class="msgs">
+        <div class="alert alert-dismissible alert-success d-flex justify-content-end fade show" role="alert" id="autoCloseAlert">
+          <strong>Hey!</strong>{{ msg }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        </div>
+
+      {% endfor %}
+
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Dhruvil Antala</span>
+                                    <span class="animated-item">Web Developer</span>
+                                    <span class="animated-item">Python Expert</span>
+                                </div>
+                        </h1>
+
+                        <p>Hello! I'm a highly skilled Python developer with expertise in two of the most popular web development frameworks: Django and FastAPI. With years of hands-on experience, I've honed my abilities to craft robust, scalable, and efficient web applications.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="{% static 'docs/dhruvil-resume.pdf' %}" download  class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="{% static 'img/myprof.png' %}" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Things I have designed for digital media agencies</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="{% static 'img/project-image03.png' %}" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="{% static 'img/project-image02.png' %}" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-4 col-12">
+            <h2 class="mb-4 mobile-mt-2">Educations</h2>
+      
+              <div class="timeline">
+                  <div class="timeline-wrapper">
+                       <div class="timeline-yr">
+                            <span>2023</span>
+                       </div>
+                       <div class="timeline-info">
+                            <h3><span>BCA</span><small>VNSGU</small></h3>
+                            <p>
+                              I had completed Bca in Vnsgu with 79%.</p>
+                       </div>
+                  </div>
+      
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>2020</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><span>HSC</span><small>Tapovan Vidhyalay</small></h3>
+                          <p>I had completed 12th in Tapovan Vidhyalay with 80%.</p>
+                      </div>
+                  </div>
+                  
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>2018</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><span>SSC</span><small>Harekrushna Vidhyalaya</small></h3>
+                          <p>I had completed 10th in Harekrushna Vidhyalaya with 75%.</p>
+                      </div>
+                  </div>
+      
+              </div>
+          </div>
+
+          
+          <div class="col-lg-4 col-12">
+            <h2 class="mb-4">Experiences</h2>
+            <div class="timeline">
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2023</span>
+                </div>
+                <div class="timeline-info">
+                  <h3><span>Python Developer</span><small>Halfsquare</small></h3>
+                  <p>I am currently working as a Python developer at Halfsquare.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-12">
+            <h2 class="mb-4 mobile-mt-2">Skills</h2>
+      
+              <div class="timeline">
+                  <div class="timeline-wrapper">
+                       <div class="timeline-yr">
+                            <span>Python</span>
+                       </div>
+                       <div class="timeline-info">
+                            <h3><small>Programming Language</small></h3>
+                       </div>
+                  </div>
+      
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>Django</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><small>Python Web Framework</small></h3>
+                      </div>
+                  </div>
+                  
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>FastAPI</span>
+                      </div>
+                      <div class="timeline-info">
+                          <h3><small>Python Web Framework</small></h3>
+                      </div>
+                  </div>
+
+                  <div class="timeline-wrapper">
+                    <div class="timeline-yr">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="timeline-info">
+                        <h3><small>Cascading Style Sheets</small></h3>
+                    </div>
+                </div>
+
+                <div class="timeline-wrapper">
+                  <div class="timeline-yr">
+                      <span>HTML5</span>
+                  </div>
+                  <div class="timeline-info">
+                      <h3><small>Hypertext Markup Language</small></h3>
+                  </div>
+              </div>
+      
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23804.208566594115!2d72.83639867198353!3d21.170239269875155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3958223db9e7b6a7%3A0x20d5f79c1a810a5c!2sSurat%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1631267456757" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">+91 90160 57548</p>
+                  <p><a href="mailto:hello@company.co">dhruvilantala123@gmail.com</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="https://www.instagram.com/" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="https://www.youtube.com/channel/UCSgtKuNhR81CDzcG0ERMh8w" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+              <form action="/" method="post">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required>
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email" required>
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">  
+                        <p class="copyright-text text-center">Designed by Dhruvil</p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"> </script>
+    <script src="{% static 'js/popper.min.js' %}"> </script>
+    <script src="{% static 'js/bootstrap.min.js' %}"> </script>
+    <script src="{% static 'js/Headroom.js' %}"> </script>
+    <script src="{% static 'js/jQuery.headroom.js' %}"> </script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"> </script>
+    <script src="{% static 'js/smoothscroll.js' %}"> </script>
+    <script src="{% static 'js/custom.js' %}"> </script>
+
+    <script>
+      setTimeout(function () {
+        $("#autoCloseAlert").alert('close');
+      }, 5000);
+    </script>
+  </body>
+</html>
