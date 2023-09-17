@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.x
+FROM python:3.8
 
 # Set environment variables for Django
 ENV PYTHONUNBUFFERED 1
