@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-b^7d$%a^x5iv6q9b-q@v(c@5_t@2dp6!$tc*6x17c-*s^3&rrk
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['myinfo-d4ym.onrender.com', 'example.com', 'www.example.com']
+ALLOWED_HOSTS = ['myinfo-d4ym.onrender.com', 'example.com', 'www.example.com', '127.0.0.1']
 
 
 # Application definition
