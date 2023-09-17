@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-# STATIC_ROOT = 'static'
+STATIC_ROOT = 'static'
 
 MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 MEDIA_URL='/media/'
@@ -136,9 +136,9 @@ MEDIA_URL='/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = [
-    BASE_DIR,"static"
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR,"static"
+# ]
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
