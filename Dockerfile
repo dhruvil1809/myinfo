@@ -17,4 +17,4 @@ COPY . /app/
 
 
 # Run your application using Gunicorn
-CMD ["gunicorn", "info.wsgi:application", "--bind", "0.0.0.0:8000"]
+ENTRYPOINT ["gunicorn", "info.wsgi"]
